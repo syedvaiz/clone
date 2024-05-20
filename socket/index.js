@@ -1,6 +1,8 @@
 const io = require('socket.io')(8800, {
 	cors: {
 		origin:'https://clone-frontend-seven.vercel.app',
+		methods: ['GET', 'POST'],
+    	credentials: true,
 	},
 });
 
